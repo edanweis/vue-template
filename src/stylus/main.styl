@@ -1,0 +1,65 @@
+$smooth = cubic-bezier(.64,.02,.14,.94)
+$fast = cubic-bezier(.15,.36,.49,.81)
+
+.noevents{
+	pointer-events: none
+}
+
+.allevents{
+	pointer-events: all;
+}
+
+.noselect{
+     user-select: none;
+}
+
+.allselect{
+     user-select: auto;
+}
+
+*::selection {
+  
+}
+
+.pointer{
+    cursor: pointer;
+}
+.grab{
+	cursor: grab
+}
+
+.absMiddle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 245ms $smooth
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0
+}
+
+.zoom-enter-active, .zoom-leave-active {
+  transition: all 245ms $smooth
+}
+.zoom-enter, .zoom-leave-to{
+  transform: scale(0);
+  transform-origin: bottom right;
+}
+
+
+// @font-face {
+//     font-family: 'Circular';
+//     src: url('~@/assets/CircularStd-Book.woff2') format('woff2'),
+//         url('~@/assets/CircularStd-Book.woff') format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+// }

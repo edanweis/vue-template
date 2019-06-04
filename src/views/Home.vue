@@ -1,13 +1,13 @@
 <template>
-  <HelloWorld />
+  <aspect-map />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import AspectMap from '../components/AspectMap'
 
   export default {
     components: {
-      HelloWorld
+      AspectMap
     }
   }
 </script>
