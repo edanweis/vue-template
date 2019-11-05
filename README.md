@@ -1,4 +1,4 @@
-# vue-template
+# vuetify-2.0-template
 
 ## Project setup
 ```
